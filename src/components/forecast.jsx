@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import moment from 'moment';
+import moment from "moment";
 import { getCityForecastWeather } from "../api/open_weather";
 
 export default function Forecast({ city }) {
@@ -29,9 +29,10 @@ export default function Forecast({ city }) {
                 <div className="forecast">
                   {foreCastInfo.list.map((day, key) => (
                     <div className="forecast-day" key={key}>
-                      <span>{moment(day.dt_txt).format('MM-DD-YYYY')}</span>
+                      <span>{moment(day.dt_txt).format("MM-DD-YYYY")}</span>
                       <div className="day-icon">
                         <img
+                          alt="#"
                           src={
                             `http://openweathermap.org/img/wn/` +
                             day.weather[0].icon +
