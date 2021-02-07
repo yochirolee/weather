@@ -58,7 +58,7 @@ export default function Card({
                           <img
                             alt=""
                             src={
-                              `http://openweathermap.org/img/wn/` +
+                              `https://openweathermap.org/img/wn/` +
                               weatherInfo.weather[0].icon +
                               "@2x.png"
                             }
