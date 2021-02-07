@@ -32,7 +32,7 @@ export default function Forecast({ city }) {
                       <span>{moment(day.dt_txt).format("MM-DD-YYYY")}</span>
                       <div className="day-icon">
                         <img
-                          alt="#"
+                          alt=""
                           src={
                             `http://openweathermap.org/img/wn/` +
                             day.weather[0].icon +

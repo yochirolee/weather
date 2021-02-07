@@ -41,7 +41,7 @@ export default function Card({
                   <>{error.message}</>
                 ) : (
                   <>
-                    {" "}
+                    
                     <div className="card-location">
                       <h3>
                         {weatherInfo.name}, {weatherInfo.sys.country}
