@@ -28,7 +28,7 @@ export const getCityForecastWeather = async (city, cnt) => {
         appid: API_KEY,
         q: city,
         units: "metric",
-        cnt: cnt,
+        cnt: 3,
       },
     });
     return data;

@@ -317,6 +317,9 @@ input {
     height: 100vh;
     border-radius: 0px;
   }
+  .card-bottom{
+    align-items: center;
+  }
   .card-wheater-params{
     font-size: 12px;
     margin-right: 14px;
@@ -361,5 +364,8 @@ input {
   }
   .card-wheater-second{
     margin-top:1rem;
+  }
+  .card-days-container{
+    margin: 0 50px;
   }
 }

@@ -41,7 +41,6 @@ export default function Forecast({ city }) {
                         />
                       </div>
                       <div className="day-temp">{day.main.temp} °C</div>
-                      <div className="day-icon icon-expand"></div>
                     </div>
                   ))}
                 </div>
