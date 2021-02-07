@@ -1,0 +1,365 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100vh;
+  background: url(./img/wheater/images.jfif) no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: #362726d7;
+}
+.nav {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+input {
+  width: 300px;
+  border-radius: 20px;
+  padding: 5px;
+  height: 50px;
+  border: none;
+  color: rgba(0, 0, 0, 0.397);
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.btn {
+  height: 50px;
+  width: 80px;
+}
+
+.btn-submit {
+  display: block;
+  border: none;
+  border-radius: 0px 15px 15px 0;
+  position: relative;
+  right: 17px;
+  background: #fff;
+  border-left: 1px solid rgba(0, 0, 0, 0.11);
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.603);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 80px;
+  flex-shrink: 0;
+
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 900px;
+  height: 580px;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+}
+.card-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.911);
+  padding: 2rem;
+
+  flex: 2;
+  border-right: 1px solid rgba(255, 255, 255, 0.13);
+}
+.card-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 4rem 0rem 4rem;
+}
+
+.card-location h3 {
+  font-size: 3rem;
+}
+
+.card-wheater-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.card-wheater-temp {
+  font-size: 5rem;
+}
+
+.card-wheater-temp .feels-like {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+.card-wheater-second {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.card-wheater-second p {
+  padding: 1rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.295);
+}
+
+.card-wheater-second p:last-child {
+  border-right: none;
+}
+.card-wheater-params {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.icon {
+  width: 100px;
+  height: 80px;
+  color: #fff;
+}
+.sun-info {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sun-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-sun-rise {
+  background: url(./img/wheater/icons8-salida-del-sol-50.png) no-repeat;
+  background-size: contain;
+  height: 12px !important;
+  cursor: pointer;
+  width: 25px;
+  height: 25px !important;
+}
+
+.icon-sun-down {
+  background: url(./img/wheater/icons8-puesta-de-sol-50.png) no-repeat;
+  background-size: contain;
+  height: 12px !important;
+  cursor: pointer;
+  width: 25px;
+  height: 25px !important;
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-expand {
+  background: url(./img/wheater/icons8-flecha-ampliar-24.png) no-repeat;
+  background-size: contain;
+  height: 12px !important;
+  cursor: pointer;
+}
+.icon-close {
+  position: absolute;
+  left: 290px;
+  top: 4px;
+  height: 24px;
+  width: 24px;
+  background: url(./img/wheater/images.jfif) no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.card-bottom {
+  width: 100%;
+  flex: 1;
+  margin-top: 1rem;
+
+  padding: 1rem;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.966);
+}
+
+.card-days-container p {
+  text-align: center;
+}
+.forecast {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  font-size: 12px;
+}
+
+.forecast-day {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  margin: 4px;
+}
+.forecast-day .day-icon img {
+  width: 25px;
+  height: 25px;
+}
+
+.card-autumn {
+  background: #ec008c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #fc6767,
+    #ec008c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #fc6767,
+    #ec008c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-winter {
+  background: #373b44; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #0ca3df,
+    #4286f4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #0e526de0,
+    #0ca3df
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-sprint {
+  background: #34e89e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #0f3443,
+    #34e89e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #157e34,
+    #34e89e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-summer {
+  background: #fdc830; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f37335,
+    #fdc830
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #f37335,
+    #fdc830
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.colors {
+  display: flex;
+  flex-direction: column;
+  margin: auto 10px;
+}
+
+.color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 4px;
+  cursor: pointer;
+}
+
+/*MEDIA QUERY*/
+@media (max-width: 858px) {
+  .overlay {
+    height: 0px;
+  }
+  .card-container {
+    margin-top: 0px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 0px;
+  }
+  .card-wheater-params{
+    font-size: 12px;
+    margin-right: 14px;
+  }
+  .card-wheater-params .icon {
+    width: 50px;
+    height: 50px;
+    
+    
+  }
+  .card-wheater-params img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-location h3 {
+    margin-top: 8px;
+    font-size: 2rem;
+  }
+
+  .card-location {
+    text-align: center;
+  }
+
+  .colors {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+  }
+  .card-wheater-temp {
+    font-size: 3rem;
+  }
+
+  .card-wheater-second p {
+    padding: 10px;
+    font-size: 12px;
+  }
+  input {
+    width: auto;
+  }
+  .card-wheater-second{
+    margin-top:1rem;
+  }
+}
